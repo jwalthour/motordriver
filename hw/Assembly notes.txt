@@ -1,0 +1,10 @@
+Assembly notes:
+
+It's very easy to short together VCC and ground on this board.  Before applying power in any of these steps, I recommend using a multimeter to verify that VCC & ground are not connected.
+
+Recommended steps for populating components:
+1) Install main power input terminal block, voltage regulator (see attached photos), and both capacitors.  Check for shorts between VCC and GND, and apply power.  Check the +5V line and confirm it is at 5V.
+2) Install resonator and Arduino socket.  Load a program onto your Arduino that does something recognizable, such as the Blink demo which turns a pin on and off.  Check for shorts, apply power, and verify the Arduino has booted.
+3) Install all other parts.  Take care to install the diodes in the correct way; the printing on the board may not be correct.  Because the board's diode markings are not correct, this is the most important step to check for shorts.  Apply power; confirm that battery voltage does not drastically drop (indicating a strong power draw).
+4) Load final software onto Arduino.  Connect a motor to channel 0.  Give command to run motor forwards and backwards; confirm channel responds.  Repeat for all channels.
+5) Enjoy.

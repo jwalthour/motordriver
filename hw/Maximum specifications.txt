@@ -1,0 +1,5 @@
+Specifications:
+Maximum VCC: 18V 
+This is limited by the voltage regulator.  The L298 motor driver can accomodate up to 46V.  Using a higher rated voltage regulator will result in higher voltage ratings.
+Maximum channel current: 2A momentarily, 1.1A sustained
+This is limited by the L298 motor driver.  There is also a PTC self-resetting fuse in series with each channel with a trip current of 1.95A.  These fuses have a hold current specified at 1.1A.
